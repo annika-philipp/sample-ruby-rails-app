@@ -1,3 +1,3 @@
 # Adventures in Ruby on Rails land  
 
-Simple add to teach myself Ruby on Rails. Good stuff!
+Simple app to teach myself Ruby on Rails. Good stuff!

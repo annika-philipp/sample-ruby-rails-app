@@ -12,7 +12,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template 'users/new'
     assert_select 'div#error_explanation'
     assert_select 'div.alert-danger'
-    assert_select 'form[action ="/signup"]' # assert_select checks for the presense of...
   end
 
   test "valid submission" do

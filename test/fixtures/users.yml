@@ -3,10 +3,21 @@ annika:
   name: Annika Example
   email: annika@example.com
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 lana:
   name: Lana Kane
   email: lana@example.gov
+  password_digest: <%= User.digest('password') %>
+
+archer:
+  name: Sterling Archer
+  email: dangerzone@example.gov
+  password_digest: <%= User.digest('password') %>
+
+malory:
+  name: Malory Archer
+  email: boss@example.gov
   password_digest: <%= User.digest('password') %>
 
 <% 30.times do |n| %>

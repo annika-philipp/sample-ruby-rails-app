@@ -6,7 +6,9 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  # has_secure makes sure that when originally setting up password is not empty
+  # validates allow_nil: true allows for user leaving pw empty when they don't want to change it
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
   # Returns the hash digest of the given string
   def User.digest(string)
